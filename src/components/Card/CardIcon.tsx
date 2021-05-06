@@ -18,7 +18,9 @@ const CardIcon = (props: IProps) => {
       <div className="flex justify-center items-center text-white h-10 text-lg font-bold">
         {props.name}
       </div>
-      <div className="text-sm h-20 text-center text-white">{props.description}</div>
+      <div className="text-sm h-20 text-center text-white">
+        {props.description}
+      </div>
     </div>
   );
 };
