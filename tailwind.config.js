@@ -6,7 +6,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      transitionDelay: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

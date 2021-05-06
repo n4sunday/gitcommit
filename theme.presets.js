@@ -4,6 +4,7 @@ module.exports = {
       colors: {
         bgapp: '#0f0f13',
         app: '#222429',
+        apphover: '#141419',
         copyfrom: "#e84f3d",
         copyto: "#fb9c51",
         refactor: "#77e856",

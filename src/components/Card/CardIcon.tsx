@@ -11,7 +11,7 @@ interface IProps {
 
 const CardIcon = (props: IProps) => {
   return (
-    <div className="cursor-pointer w-30 bg-app rounded-lg overflow-hidden shadow">
+    <div className="cursor-pointer w-30 bg-app rounded-lg overflow-hidden shadow hover:bg-apphover transition delay-100 duration-200">
       <CopyToClipboard
         text={`${props.icon} ${props.name}`}
         onCopy={() => props.onCopy(`${props.icon} ${props.name}`)}
