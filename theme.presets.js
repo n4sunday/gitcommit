@@ -2,8 +2,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bgapp: '#384c5b',
-        app: '#32383e',
+        bgapp: '#2f383e',
+        app: '#334759',
+        copyfrom: "#e84f3d",
+        copyto: "#fb9c51",
         refactor: "#77e856",
         build: "#64b5f6",
         fix: "#ffc400",
