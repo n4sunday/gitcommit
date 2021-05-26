@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import CardIcon from "./components/Card/CardIcon";
 import MessageCard from "./components/Message/MessageCard";
 
@@ -64,9 +65,6 @@ function App() {
 
   const handleCopy = (text: string) => {
     setMessage(text);
-    setTimeout(() => {
-      setMessage("");
-    }, 3000);
   };
 
   return (

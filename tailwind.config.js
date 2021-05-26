@@ -8,6 +8,7 @@ module.exports = {
   variants: {
     extend: {
       transitionDelay: ['hover', 'focus'],
+      animation: ['motion-reduce'],
     },
   },
   plugins: [],
