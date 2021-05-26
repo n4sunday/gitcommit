@@ -67,7 +67,7 @@ function App() {
   };
 
   return (
-    <div className="bg-bgapp flex justify-center">
+    <div className="bg-bgapp flex justify-center min-h-screen">
       <MessageCard active={!!message} text={message} />
       <div className="w-2/3 h-full overflow-y-auto container my-10 grid grid-cols-4 gap-4">
         {commit?.map((item, index) => (
