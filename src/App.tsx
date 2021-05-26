@@ -64,6 +64,9 @@ function App() {
 
   const handleCopy = (text: string) => {
     setMessage(text);
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
   };
 
   return (
