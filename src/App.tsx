@@ -11,7 +11,7 @@ const commit = [
   },
   {
     name: "chore:",
-    icon: "🔨",
+    icon: "🔧",
     color: "bg-chore",
     description: "A code change that external user won't see.",
   },
@@ -41,7 +41,7 @@ const commit = [
   },
   {
     name: "fix:",
-    icon: "🔧",
+    icon: "🚑️",
     color: "bg-fix",
     description: "A bug fix.",
   },
