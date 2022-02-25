@@ -14,7 +14,7 @@ const CardIcon = (props: IProps) => {
     <div className="cursor-pointer w-30 bg-app rounded-lg overflow-hidden shadow hover:bg-apphover transition delay-100 duration-200">
       <CopyToClipboard
         text={`${props.icon} ${props.name}`}
-        onCopy={() => props.onCopy(`${props.icon} ${props.name}`)}
+        onCopy={() => props.onCopy(`${props.icon} ${props.name} | `)}
       >
         <div
           className={`w-full h-32 flex items-center justify-center text-7xl ${props.color}`}
