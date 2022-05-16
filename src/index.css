@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Avenir", sans-serif;
+  font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,4 +13,19 @@ body {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+@layer base {
+  svg {
+    display: inline;
+    vertical-align: baseline;
+  }
+}
+
+.ant-notification-notice {
+  @apply bg-app;
+}
+
+.ant-notification-notice-message {
+  @apply text-white;
 }

@@ -5,11 +5,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {
-      transitionDelay: ['hover', 'focus'],
-      animation: ['motion-reduce'],
-    },
-  },
   plugins: [],
 }
