@@ -13,6 +13,7 @@ const Head: React.FC = () => {
         <span>C</span>
         <span>O</span>
         <span>M</span>
+        <span>M</span>
         <span>I</span>
         <span>T</span>
       </div>
