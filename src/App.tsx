@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React from 'react'
+import { notification } from 'antd'
 
-import CardIcon from "./components/Card/CardIcon";
-import MessageCard from "./components/Message/MessageCard";
-import { commit } from "./constants/commit";
+import CardIcon from './components/Card/CardIcon'
+import { commit } from './constants/commit'
+import Head from './components/Head'
 
 function App() {
-  const [message, setMessage] = useState("");
-
   const handleCopy = (text: string) => {
-    setMessage(text);
-  };
+    notification.success({
+      message: `${text} copied to the clipboard`,
+    })
+  }
 
   return (
-    <div className="bg-bgapp flex justify-center min-h-screen">
-      <MessageCard active={!!message} text={message} />
-      <div className="w-2/3 h-full overflow-y-auto container my-10 grid grid-cols-4 gap-4">
+    <div className="bg-bgapp flex flex-col items-center min-h-screen">
+      <Head />
+      <div className="w-full h-full overflow-y-auto container mb-10 grid grid-cols-4 gap-4 px-4">
         {commit?.map((item, index) => (
           <div className="col-span-4 sm:col-span-2 xl:col-span-1" key={index}>
             <CardIcon
@@ -28,7 +29,7 @@ function App() {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
